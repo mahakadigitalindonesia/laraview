@@ -14,7 +14,8 @@
                 </div>
             </div>
             <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                <img src="{{ $attributes->get('image') ?? asset('/laraview/assets/img/values-3.png') }}" class="img-fluid" alt="">
+                <img src="{{ $attributes->get('image') ?? asset(config('laraview.assets.url_prefix') . '/laraview/assets/img/values-3.png') }}"
+                     class="img-fluid" alt="">
             </div>
         </div>
     </div>

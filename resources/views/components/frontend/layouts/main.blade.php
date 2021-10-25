@@ -11,8 +11,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('/laraview/assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('/laraview/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/img/logo-mdigi.png') }}" rel="icon">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/img/logo-mdigi.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -20,15 +20,15 @@
             rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('/laraview/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/laraview/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('/laraview/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('/laraview/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ asset('/laraview/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/laraview/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('/laraview/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -42,16 +42,16 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 <!-- Vendor JS Files -->
-<script src="{{ asset('/laraview/assets/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/aos/aos.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/php-email-form/validate.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/purecounter/purecounter.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-<script src="{{ asset('/laraview/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/purecounter/purecounter.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
 
 <!-- Template Main JS File -->
-<script src="{{ asset('/laraview/assets/js/main.js') }}"></script>
+<script src="{{ asset(config('laraview.assets.url_prefix') . '/mdigi/laraview/assets/js/main.js') }}"></script>
 @stack('scripts')
 </body>
 

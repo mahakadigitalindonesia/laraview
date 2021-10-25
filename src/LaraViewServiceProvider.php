@@ -7,30 +7,39 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
+use Mdigi\LaraView\Helpers\LaraView;
 
 class LaraViewServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laraview');
+        if (LaraView::isConfigPublished()) {
+            $this->mergeConfigFrom(config_path('laraview.php'), 'laraview');
+        } else {
+            $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laraview');
+        }
     }
 
     public function boot()
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config('laraview.php'),
+                __DIR__ . '/../config/config.php' => config_path('laraview.php'),
             ], 'laraview-config');
 
             $this->publishes([
-                __DIR__ . '/../resources/views' => resource_path('views/vendor/'),
+                __DIR__ . '/../resources/views' => resource_path(LaraView::VIEWS_PATH),
             ], 'laraview-views');
 
             $this->publishes([
-                __DIR__ . '/../stubs' => public_path('laraview/'),
+                __DIR__ . '/../stubs' => public_path(LaraView::ASSETS_PATH),
             ], 'laraview-assets');
         }
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laraview');
+        if (LaraView::isViewsPublished()) {
+            $this->loadViewsFrom(resource_path(LaraView::VIEWS_PATH), 'laraview');
+        } else {
+            $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laraview');
+        }
         $this->configureComponents();
         $this->registerRoutes();
     }
@@ -44,7 +53,9 @@ class LaraViewServiceProvider extends ServiceProvider
             $this->registerComponent('frontend.header');
             $this->registerComponent('frontend.hero');
             $this->registerComponent('frontend.navbar');
+            $this->registerComponent('frontend.logo');
             $this->registerComponent('frontend.buttons.primary');
+            $this->registerComponent('frontend.buttons.primary-icon');
         });
     }
 
@@ -62,13 +73,9 @@ class LaraViewServiceProvider extends ServiceProvider
 
     protected function routeConfiguration()
     {
-        $routeOptions = [
+        return [
             'prefix' => config('laraview.routes.prefix'),
             'middleware' => config('laraview.routes.middleware')
         ];
-//        if (config('laraview.routes.prefix')) {
-//            array_push($routeOptions, ['prefix' => config('laraview.routes.prefix')]);
-//        }
-        return $routeOptions;
     }
 }

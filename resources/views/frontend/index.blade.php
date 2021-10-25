@@ -8,9 +8,10 @@
                 <li>
                     @if (Route::has('login'))
                         @auth
-                            <a class="getstarted" href="{{ url('/home') }}">Home</a>
+                            <x-laraview-frontend.buttons.primary label="Home"/>
+
                         @else
-                            <a class="getstarted" href="{{ route('login') }}">Login</a>
+                            <x-laraview-frontend.buttons.primary label="Login"/>
                         @endauth
                     @endif
                 </li>
@@ -25,9 +26,9 @@
             <x-slot name="cta">
                 @if (Route::has('login'))
                     @auth
-                        <x-laraview-frontend.buttons.primary href="{{ route('dashboard') }}" label="Dashboard"/>
+                        <x-laraview-frontend.buttons.primary-icon href="{{ route('dashboard') }}" label="Dashboard"/>
                     @else
-                        <x-laraview-frontend.buttons.primary href="{{route('login')}}" label="Login"/>
+                        <x-laraview-frontend.buttons.primary-icon href="{{route('login')}}" label="Login"/>
                     @endauth
                 @endif
             </x-slot>

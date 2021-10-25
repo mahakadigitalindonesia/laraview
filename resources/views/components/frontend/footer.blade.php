@@ -3,10 +3,7 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
-                    <a href="{{ $attributes->get('href') }}" class="logo d-flex align-items-center">
-                        <img src="{{ $attributes->get('logo') ?? asset('image/logo.png') }}" class="gambar" style="opacity: .8; width: 20px;">
-                        <span>{{ config('app.name', 'MDIGI Laraview') }}</span>
-                    </a>
+                    <x-laraview-frontend.logo/>
                     <p>{{ $description }}</p>
                 </div>
                 <div class="col-lg-4 col-6 footer-links">
