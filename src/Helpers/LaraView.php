@@ -1,4 +1,5 @@
 <?php
+
 namespace Mdigi\LaraView\Helpers;
 
 class LaraView
@@ -21,5 +22,9 @@ class LaraView
         return file_exists(config_path('laraview.php'));
     }
 
+    public static function isLandingPage()
+    {
+        return config('laraview.landing_page', true);
+    }
 
 }
