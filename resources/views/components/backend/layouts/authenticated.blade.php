@@ -8,10 +8,10 @@
         <div class="page-body-wrapper horizontal-menu">
             <x-laraview-backend.sidebar logo-url="{{ $attributes->get('sidebar-logo-url') }}"
                                         logo="{{ $attributes->get('sidebar-logo') }}">
-                {{ $sidebarItems }}
+                {{ $sidebarItems ?? '' }}
             </x-laraview-backend.sidebar>
             <div class="page-body">
-                {{ $content }}
+                {{ $content ?? '' }}
             </div>
             <footer class="footer">
                 <div class="container-fluid">

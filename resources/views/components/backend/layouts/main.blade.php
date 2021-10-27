@@ -44,7 +44,7 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/responsive.css') }}">
 
-    {{ $styles }}
+    {{ $styles ?? '' }}
 </head>
 
 <body class="">
@@ -54,7 +54,7 @@
         <!-- tap on tap ends-->
         <!-- page-wrapper Start-->
         <div class="page-wrapper compact-wrapper" id="pageWrapper">
-            {{ $body }}
+            {{ $body ?? '' }}
         </div>
     </div>
     <!-- latest jquery-->
