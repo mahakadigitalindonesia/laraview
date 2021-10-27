@@ -2,11 +2,11 @@
 
 return [
     'routes' => [
-//        'prefix' => 'mdigi', # Uncomment this to set prefix to package routes.
+        'prefix' => null,
         'middleware' => ['web']
     ],
     'assets' => [
-//        'url_prefix' => 'mdigi' # Uncoment this to set prefix to view assets url.
+        'url_prefix' => null,
     ],
     'landing_page' => true, # Set `false` if you have your own landing page implementation
 ];
