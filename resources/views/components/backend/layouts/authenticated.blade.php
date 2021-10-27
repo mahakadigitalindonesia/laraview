@@ -1,13 +1,8 @@
 <x-laraview-backend.layouts.main>
     <x-slot name="body">
-        <x-laraview-backend.navbar
-                logo-url="{{ $attributes->get('navbar-logo-url') }}"
-                logo="{{ $attributes->get('navbar-logo') }}"
-                user-avatar="{{ $attributes->get('navbar-user-avatar') }}"
-        />
+        <x-laraview-backend.navbar/>
         <div class="page-body-wrapper horizontal-menu">
-            <x-laraview-backend.sidebar logo-url="{{ $attributes->get('sidebar-logo-url') }}"
-                                        logo="{{ $attributes->get('sidebar-logo') }}">
+            <x-laraview-backend.sidebar>
                 {{ $sidebarItems ?? '' }}
             </x-laraview-backend.sidebar>
             <div class="page-body">
