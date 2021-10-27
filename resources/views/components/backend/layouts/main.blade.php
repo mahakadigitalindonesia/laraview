@@ -16,33 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/fontawesome.css') }}">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/icofont.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/icofont.css') }}">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/themify.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/themify.css') }}">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/flag-icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/flag-icon.css') }}">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/feather-icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/feather-icon.css') }}">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/scrollbar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/sweetalert2.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/animate.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/scrollbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/sweetalert2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/prism.css') }}">
     <!-- Plugins css Ends-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/datagrid/datagrid.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/datagrid/datagrid.css') }}">
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/select2/css/select2.min.css') }}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/daterangepicker/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/vendors/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/vendors/bootstrap.css') }}">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/style.css') }}">
-    <link id="color" rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/color-1.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/style.css') }}">
+    <link id="color" rel="stylesheet" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/color-1.css') }}" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/css/responsive.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/css/responsive.css') }}">
 
     {{ $styles }}
 </head>
@@ -58,34 +58,34 @@
         </div>
     </div>
     <!-- latest jquery-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/jquery-3.5.1.min.js') }}"></script>
     <!-- Bootstrap js-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <!-- feather icon js-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/icons/feather-icon/feather.min.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/icons/feather-icon/feather-icon.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/icons/feather-icon/feather.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/icons/feather-icon/feather-icon.js') }}"></script>
     <!-- scrollbar js-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/scrollbar/simplebar.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/scrollbar/custom.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/scrollbar/simplebar.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/scrollbar/custom.js') }}"></script>
     <!-- InputMask -->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/inputmask/jquery.inputmask.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/inputmask/jquery.inputmask.min.js') }}"></script>
     <!-- Select2 -->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/select2/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/select2/js/select2.full.min.js') }}"></script>
     <!-- Daterange picker -->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/moment/moment.min.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/adminlte/plugins/daterangepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/moment/moment.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/adminlte/plugins/daterangepicker/daterangepicker.js') }}"></script>
     <!-- Sidebar jquery-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/config.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/config.js') }}"></script>
     <!-- Plugins JS start-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/sidebar-menu.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/prism/prism.min.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/clipboard/clipboard.min.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/custom-card/custom-card.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/form-validation-custom.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/tooltip-init.js') }}"></script>
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/sidebar-menu.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/prism/prism.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/clipboard/clipboard.min.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/custom-card/custom-card.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/form-validation-custom.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/tooltip-init.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/sweet-alert/sweetalert.min.js') }}"></script>
     <!-- Theme js-->
-    <script src="{{ asset(config('laraview.assets.url_prefix'.'/mdigi/laraview/cuba/html/assets/js/script.js') }}"></script>
+    <script src="{{ asset(config('laraview.assets.url_prefix').'/mdigi/laraview/cuba/html/assets/js/script.js') }}"></script>
     <!-- Plugin used-->
     @stack('scripts')
 </body>
