@@ -1,7 +1,7 @@
 <x-laraview-backend.layouts.main>
     <x-slot name="body">
         <x-laraview-backend.navbar
-                logo-url="{{ $attrbutes->get('navbar-logo-url') }}"
+                logo-url="{{ $attributes->get('navbar-logo-url') }}"
                 logo="{{ $attributes->get('navbar-logo') }}"
                 user-avatar="{{ $attributes->get('navbar-user-avatar') }}"
         />
