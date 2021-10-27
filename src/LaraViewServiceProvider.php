@@ -58,7 +58,7 @@ class LaraViewServiceProvider extends ServiceProvider
             $this->registerComponent('frontend.buttons.primary-icon');
             $this->registerComponent('backend.layouts.main');
             $this->registerComponent('backend.layouts.authenticated');
-            $this->registerComponent('backend.guest');
+            $this->registerComponent('backend.layouts.guest');
             $this->registerComponent('backend.navbar');
             $this->registerComponent('backend.sidebar');
         });
